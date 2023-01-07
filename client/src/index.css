@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 80vh;
+}
+
+.Auth-form {
+  width: 440px;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+
+.Auth-form-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: rgb(34, 34, 34);
+  font-weight: 800;
+}
+.text-center{
+  margin-bottom: 5px;
+}
+.text-center .link-primary{
+  margin-left: 3px;
+}
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+}
+.form-bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.cont-home .row-home{
+  margin-top: 30px;
+}
+.cont-home .row-home .col-left-row-home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+.cont-home .row-home .col-rigth-row-home{
+  width: 50%;
+}
+.cont-home .row-home .col-rigth-row-home img{
+  width: 100%;
+}
+
+@media  screen and (max-width:1000px){
+  .cont-home .row-home{
+    margin-top: 30px;
+  }
+}
+@media  screen and (max-width:790px){
+  .cont-home .row-home{
+    display: inline-block;
+    width: 100%;
+  }
+  .cont-home .row-home .col-left-row-home{
+    width:100%;
+    margin-bottom: 30px;
+
+  
+  }
+  .cont-home .row-home .col-rigth-row-home{
+    width:100%;
+   
+  }
+  .cont-home .row-home .col-rigth-row-home img{
+    width:100%;
+ 
+   
+  }
+
+
+}

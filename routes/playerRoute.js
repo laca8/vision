@@ -1,0 +1,10 @@
+const express = require("express");
+const playerController = require("../controllers/playerController");
+const { auth } = require("../middleware/auth");
+const router = express.Router();
+router.post("/", auth, playerController.addPlayer);
+router.get("/", playerController.getPlayers);
+router.get("/user", auth, playerController.getPlayerByUser);
+router.put("/", auth, playerController.updatePlayer);
+router.get("/:id", playerController.getPlayerById);
+module.exports = router;
